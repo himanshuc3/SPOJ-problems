@@ -3,6 +3,7 @@ I embarked on the journey to solving competitive programming problems on SPOJ. T
 
 <p align="center">
   <img src="https://github.com/himanshuc3/SPOJ-problems/blob/master/assets/spog_landing_page.png">
+  <p text-align="center">Fig: SPOJ landing page</p>
 </p>
 
 ## Directory Structure
