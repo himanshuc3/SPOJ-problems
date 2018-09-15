@@ -9,7 +9,7 @@ I embarked on the journey to solving competitive programming problems on SPOJ. T
 
  ID | Name | Completion
  ---|-------|-----------
- 1 | Life, Universe and Everything | [x]
+ 1 | Life, Universe and Everything | [ ]
  
  
  
