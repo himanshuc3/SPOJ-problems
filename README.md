@@ -6,14 +6,7 @@ I embarked on the journey to solving competitive programming problems on SPOJ. T
   2. ```SPOJ_solutions``` - Solutions to classic SPOJ problems.
   
 ## Spoj Solutions
-
- ID | Name | Completion
- ---|-------|-----------
- 1 | Life, Universe and Everything | - [ ]
  
- 
- 
- 
- [ ] Life, Universe and Everything
- - [ ] Prime1
- - [ ] Transform the expression
+ 1. [x] Life, Universe and Everything
+ 2. [x] Prime1
+ 3. [x] Transform the expression
