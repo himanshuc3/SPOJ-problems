@@ -4,3 +4,9 @@ I embarked on the journey to solving competitive programming problems on SPOJ. T
 ## Directory Structure
   1. ```DS_algo``` - random implementation of common data structures like linked lists, trees.
   2. ```SPOJ_solutions``` - Solutions to classic SPOJ problems.
+  
+## Spoj Solutions
+
+ - [ ] Life, Universe and Everything
+ - [ ] Prime1
+ - [ ] Transform the expression
