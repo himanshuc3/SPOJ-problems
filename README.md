@@ -7,6 +7,13 @@ I embarked on the journey to solving competitive programming problems on SPOJ. T
   
 ## Spoj Solutions
 
- - [ ] Life, Universe and Everything
+ ID | Name | Completion
+ ---|-------|-----------
+ 1 | Life, Universe and Everything | [x]
+ 
+ 
+ 
+ 
+ [ ] Life, Universe and Everything
  - [ ] Prime1
  - [ ] Transform the expression
