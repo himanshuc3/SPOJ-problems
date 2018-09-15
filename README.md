@@ -7,6 +7,6 @@ I embarked on the journey to solving competitive programming problems on SPOJ. T
   
 ## Spoj Solutions
  
- 1. [x] Life, Universe and Everything
- 2. [x] Prime1
- 3. [x] Transform the expression
+ - [x] *Life, Universe and Everything*
+ - [x] **Prime1**
+ - [x] *Transform the expression*
