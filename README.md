@@ -3,8 +3,8 @@ I embarked on the journey to solving competitive programming problems on SPOJ. T
 
 <p align="center">
   <img src="https://github.com/himanshuc3/SPOJ-problems/blob/master/assets/spog_landing_page.png">
-  <p text-align="center">Fig: SPOJ landing page</p>
 </p>
+<p align="center">fig: SPOJ landing page</p>
 
 ## Directory Structure
   1. ```DS_algo``` - random implementation of common data structures like linked lists, trees.
