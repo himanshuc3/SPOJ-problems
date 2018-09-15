@@ -78,6 +78,56 @@ void countSort(int* arr, int n){
         }
     }
 }
+
+void merge(int* arr, int s, int e){
+    int mid = (s+e)/2;
+    int i= s;
+    int j = mid+1;
+    int k=s;
+    
+    int temp[100];
+    
+    while(i<=mid&&j<=e){
+        if(arr[i]<arr[j]){
+            temp[k++] = arr[i++];
+        }else{
+            temp[k++] = arr[j++];
+        }
+    }
+    
+    while(i<=mid){
+        temp[k++] = arr[i++];
+    }
+    while(j<=e){
+        temp[k++] = arr[j++];
+    }
+    
+    //We need to copy all elements to original array
+    for(int z=s;z<=e;z++){
+        arr[z] = temp[z];
+    }
+    
+}
+
+void mergeSort(int* arr,int s,int e){
+    if(s>=e){
+        return;
+    }
+    int mid = (s+e)/2;
+    //2. Recursively divide the arrays
+    mergeSort(arr,s,mid-1);
+    mergeSort(arr,mid+1,e);
+    
+    //merge
+    merge(arr,s,e);
+}
+
+void printArray(int* arr, int n){
+    for(int i=0;i<n;i++){
+        cout<< arr[i]<<" ";
+    }
+}
+
 void printArray(int* arr,int n){
     for(int i=0;i<n;i++){
         cout<<arr[i]<<" ";
