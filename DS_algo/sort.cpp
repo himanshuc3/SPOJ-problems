@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 void bubbleSort(int* arr, int n){
@@ -87,7 +88,7 @@ void merge(int* arr, int s, int e){
     
     int temp[100];
     
-    while(i<=mid&&j<=e){
+    while( i<=mid && j<=e ){
         if(arr[i]<arr[j]){
             temp[k++] = arr[i++];
         }else{
@@ -125,12 +126,6 @@ void mergeSort(int* arr,int s,int e){
 void printArray(int* arr, int n){
     for(int i=0;i<n;i++){
         cout<< arr[i]<<" ";
-    }
-}
-
-void printArray(int* arr,int n){
-    for(int i=0;i<n;i++){
-        cout<<arr[i]<<" ";
     }
 }
 
