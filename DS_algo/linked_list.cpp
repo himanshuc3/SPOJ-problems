@@ -1,14 +1,22 @@
 #include<bits/stdc++.h>
-#include<iostream>
+// #include<iostream> 
+// not needed
 using namespace std;
 
 class node {
     public:
     int d;
     node* next;
-    node(int d){
-        this->d = d;
-        next=NULL;
+//     node(int d){
+//         this->d = d;
+//         next=NULL;
+//     }
+    
+    node(int data)
+    {
+     d = data;
+        next = NULL;
+        
     }
 };
 
@@ -120,10 +128,10 @@ class LinkedList{
         delete n;
     }
     // Operator overloading not working.
-    // void operator<<(ostream &os,LinkedList& l){
+    // void operator <<(ostream &os,LinkedList& l){
     //     l.printList();
     // }
-    // void operator>>(istream &is, LinkedList& l){
+    // void operator >>(istream &is, LinkedList& l){
     //     l.buildList();
     // }
     void middleElement(){
