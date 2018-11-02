@@ -1,11 +1,10 @@
 // Problem: New Year Chaos
 #include <bits/stdc++.h>
-
 using namespace std;
-
 vector<string> split_string(string);
 
 // Complete the minimumBribes function below.
+// Function computes minimum bribes needed and prints sequence.
 void minimumBribes(vector<int> q) {
 int cnt = 0;
     int len=q.size();
