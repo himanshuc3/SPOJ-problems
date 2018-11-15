@@ -1,4 +1,4 @@
-// Problem: Arrays: left Rotation
+// Problem: Arrays: left Rotation of array
 #include <bits/stdc++.h>
 
 using namespace std;
