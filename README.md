@@ -1,4 +1,4 @@
-# SPOJ-problems
+# Problemo
 I embarked on the journey to solving competitive programming problems on SPOJ. This repository contains my solutions to SPOJ's classic problems and some algorithms I practised along the way from different platforms. And also implementations to some of the common data structures and algorithms while I dived into __competitive programming__.
 
 <p align="center">
