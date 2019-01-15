@@ -14,7 +14,7 @@ Hi. My name is **himanshu**. I like solving problems✍🏻, particularly, the o
 <p align="center"><i>SPOJ landing page</i></p>
 
 ## Directory Structure
-  1. ```DS_algo``` - random implementations of common data structures like linked lists, trees.
+  1. ```implementations``` - random implementations of common data structures, problems and algorithms.
   2. ```SPOJ_solutions``` - Solutions to classic SPOJ problems.
   
 ## Spoj Solutions
