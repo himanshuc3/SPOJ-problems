@@ -52,9 +52,24 @@ node* buildBST(node*&root){
     
 }
 
+bool searchInBST(node* root, int data){
+    if(root==NULL){
+        return false;
+    }
+    
+    if(root->data==data){
+        return true;
+    }else if(data<root->data){
+        return searchInBST(root->left, data);
+    }else{
+        return searchInBST(root->right, data);
+    }
+}
+
 int main() {
     node* root = NULL;
     root = buildBST(root);
-      
+    bool is = searchInBST(root, 3);
+    (is)?cout<<"true":cout<<"false";
 	return 0;
 }
