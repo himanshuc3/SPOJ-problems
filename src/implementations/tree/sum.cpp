@@ -1,5 +1,5 @@
 /**
- * Problem: Permutations of a string.
+ * Problem: Replace with sum of subtrees.
  * 
  */
 #include<bits/stdc++.h>
@@ -55,14 +55,14 @@ int replaceWithSum(node* root){
     }
     
     
-    root->data += replaceWithSum(root->left) + replaceWithSum(root->data);
+    root->data += replaceWithSum(root->left) + replaceWithSum(root->right);
     
     return root->data;
 }
 
 // Replace current node's data to sum of left and right subtrees only.
 int replaceWithChildSum(node* root){
-    if(root->data==NULL){
+    if(root==NULL){
         return 0;
     }
     
@@ -80,7 +80,10 @@ int replaceWithChildSum(node* root){
 int main() {
     node* root = NULL;
     root = buildTree();
-
+    replaceWithSum(root);
+    separator();
+    replaceWithChildSum(root);
+    separator();
       
 	return 0;
 }
