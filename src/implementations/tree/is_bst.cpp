@@ -1,5 +1,5 @@
 /**
- * Problem: Permutations of a string.
+ * Problem: Check if a binary tree is bst or not.
  * 
  */
 #include<bits/stdc++.h>
