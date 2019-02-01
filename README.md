@@ -3,7 +3,7 @@
 </p>
 
 
-Hi. My name is **himanshu**. I like solving problems✍🏻, particularly, the ones related to computing💻. This is the reason I was motivated to collect🧶 all the algorithms I implement in a singular repository. These implementations are in **no way**🚫 an indication of how I write code in big codebases. Infact, I don't even work in C++ in practical projects to be honest. 
+Hi. My name is **himanshu**. I like solving problems✍🏻, particularly, the ones related to computing💻. This is the reason I was motivated to collect🧶 all the algorithms I implement in a singular repository. These implementations are in **no way**🚫 an indication of how I write code in production based environments. As a matter of fact, I don't even work in C++ in practical projects to be honest.
 
 
 
