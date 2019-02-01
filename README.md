@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/himanshuc3/problemo/blob/master/assets/logo.png" width="50rem">
+  <img src="https://github.com/himanshuc3/problemo/blob/master/assets/logo.png" width="600rem">
 </p>
 
 ---
