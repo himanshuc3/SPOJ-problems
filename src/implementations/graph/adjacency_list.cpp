@@ -30,7 +30,7 @@ class Graph{
         
         // Add edge from u to v.
         // By default, since bidir is true, make an edge from v to u.
-        void addEdge(int u, int v, int bidir=true){
+        void addEdge(int u, int v, bool bidir=true){
             l[u].push_back(v);
             if(bidir){
                 l[v].push_back(u);
