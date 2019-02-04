@@ -1,5 +1,5 @@
 /**
- * Problem: DFS. Recursive way of traversing graph.
+ * Problem: Topological sort. Kind of like dependency graph.
  * 
  */
 #include<bits/stdc++.h>
@@ -73,6 +73,57 @@ class Graph{
                 cout<<i<<"->";
             }
         }
+
+        // BFS approach to topological sort.
+        // Basically, we maintain a queue and indegree.
+        // We visit each node in queue and push its neighbour only when
+        // its indegree becomes 0, aka, all nodes on which it is dependent has
+        // been printed.
+        void topologicalSort(){
+            queue<T> q;
+            // Not really need visited map because visited each node 
+            // equal to its indegree and pushing it into queue only 
+            // when its indegree becomes 0.
+            // map<T, bool> visited;
+            map<T, int> indegree;
+            
+            // Set default values
+            for(auto i:adj_list){
+                T node = i.first;
+                indegree[node] = 0;
+                // visited[node] = false;
+            }
+            
+            //Initialize indegrees
+            for(auto i:adj_list){
+                
+                for(auto neighbour:i.second){
+                    indegree[neighbour]++;
+                }
+            }
+            
+            // Find out nodes with 0 indegree and push them into queue.
+            for(auto i:adj_list){
+                T node = i.first;
+                if(!indegree[node]){
+                    q.push(node);
+                }
+            }
+            
+            while(!q.empty()){
+                T node = q.front();
+                cout<<node<<"->";
+                q.pop();
+                
+                for(auto neighbour:adj_list[node]){
+                    indegree[neighbour]--;
+                    if(!indegree[neighbour]){
+                        q.push(neighbour);
+                    }
+                }
+            }
+            
+        }
         
         
         
@@ -99,6 +150,9 @@ int main() {
     
     g.separator();
     g.dfsTopologicalSort();
+
+    g.separator();
+    g.topologicalSort();
     
     
 	return 0;
