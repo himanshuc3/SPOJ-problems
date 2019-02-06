@@ -1,5 +1,5 @@
 /**
- * Problem: DFS. Recursive way of traversing graph.
+ * Problem: Detecting cycle using BFS in undirected graph.
  * 
  */
 #include<bits/stdc++.h>
