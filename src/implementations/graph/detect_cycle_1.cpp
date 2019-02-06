@@ -1,5 +1,5 @@
 /**
- * Problem: Detecting cycle using BFS in undirected graph.
+ * Problem: Detecting cycle using BFS and DFS in undirected graph.
  * 
  */
 #include<bits/stdc++.h>
@@ -65,6 +65,41 @@ class Graph{
             
         }
         
+        bool isCyclicHelper(T node, map<T, bool> &visited,T parent){
+            
+            visited[node] = true;
+            
+            for(auto neighbour: adj_list[node]){
+                if(!visited[neighbour]){
+                    bool isCycle = isCyclicHelper(neighbour, visited, node);
+                    if(isCycle){
+                        return true;
+                    }
+                }
+                if(visited[neighbour] && neighbour!=parent){
+                    return true;
+                }
+            }
+            
+            return false;
+        }
+        
+        // DFS cyclic undirected graph
+        bool isCyclicDFS(){
+            map<T, bool> visited;
+            
+            
+            for(auto i: adj_list){
+                if(!visited[i.first]){
+                    bool isCyclic = isCyclicHelper(i.first,visited, i.first);
+                    if(isCyclic){
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        
         
         
         
@@ -83,8 +118,10 @@ int main() {
     g.addEdge(4,3);
     g.addEdge(2,3);
     
+    bool is = g.isCyclicDFS();
+    (is)?cout<<"Cyclic":cout<<"Not Cyclic";
     g.separator();
-    bool is = g.isCyclicBFS(1);
+    is = g.isCyclicBFS(1);
     (is)?cout<<"Cyclic":cout<<"Not Cyclic";
     
     
