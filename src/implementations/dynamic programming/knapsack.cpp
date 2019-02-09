@@ -9,6 +9,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
 // Recursive
 int recursiveKnapsack(int weights[],int prices[], int n,int weightOfSack){
     // No items left or no weight left
@@ -33,6 +34,7 @@ int recursiveKnapsack(int weights[],int prices[], int n,int weightOfSack){
 
 
 // Bottom Up Solution
+// dp[][] consists of weight for cloumn and current item from start stands for row.
 int BottomUp(int weights[], int prices[], int n, int weightOfSack,int dp[][100]){
     
     

@@ -50,6 +50,7 @@ int numberOfStepsBottomUp(int steps,int* dp, int k){
 
 // Bottom Up Solution 
 // Not working currently.
+// TODO: Fix ans, algo slightly wrong.
 // Time Complexity: O(n)
 int numberOfStepsBottomUpOptimal(int steps,int* dp, int k){
     dp[0] = 1;

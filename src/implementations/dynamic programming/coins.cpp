@@ -15,8 +15,7 @@ int recursiveMinimumCoins(int* currency, int currency_length, int amount){
     int ans = INT_MAX;
     for(int i=0;i<currency_length;i++){
         if(amount-currency[i]>=0){
-        ans = min(ans,recursiveMinimumCoins(currency,currency_length,amount - currency[i])+1);
-            
+        ans = min(ans,recursiveMinimumCoins(currency,currency_length,amount - currency[i])+1);  
         }
     }
     return ans;
