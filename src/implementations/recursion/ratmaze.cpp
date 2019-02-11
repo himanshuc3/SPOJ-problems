@@ -50,6 +50,8 @@ bool ratMaze(int board[10][10],int sol[][10], int i,int j, int n){
     // Always comes after recursion call.
     // Basically, we are setting current solution point to 0 because we are returning from 
     // function call and therefore setting sol 0 before returning.
+    // If we return from a deadend, we need to set all of the 1's set to 0 representing that 
+    // this path is not the right one.
     sol[i][j] = 0;
     
     if(rightSuccess||downSuccess){
@@ -57,23 +59,8 @@ bool ratMaze(int board[10][10],int sol[][10], int i,int j, int n){
     }else{
         return false;
     }
-    
-    
-    
-    // for(int j=0;j<n;j++){
-    //     //Place queen at (i,j)th index
-    //     if(isSafePoint(board,i,j,n)){
-    //         board[i][j] = 1;
-    //         //Recursive call - Check for the next rows
-    //         bool IsNextQueenPossible = solveNQueens(board, i+1, n);
-    //         if(IsNextQueenPossible){
-    //             return true;
-    //         }
-    //         //Next queen not possible, so backtrack and find another solution
-    //         board[i][j] = 0;
-    //     }
-    // }
-    // All positions tried, every one of them failed
+
+    // Never gonna run, just corner marking in case.
     return false;
 }
 
