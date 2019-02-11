@@ -24,7 +24,8 @@ void permutations(char* in,int i,set<string> &s){
 }
 
 int main() {
-    char in[] = "aab";
+    char in[10];
+    cin>>in;
     
     // For storing unique permutations.
     // By default, set also sorts items in it.
