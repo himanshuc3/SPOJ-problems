@@ -24,10 +24,10 @@ int main(){
         }
         Q.push_back(i);
     }
+    // First window largest element
     cout<<arr[Q.front()]<<"--";
     
     for(;i<n;i++){
-        //Displaying largest in current window
         
         
         //1. Remove elements not part of current window (contraction)
